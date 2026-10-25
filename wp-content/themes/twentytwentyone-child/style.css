@@ -1,0 +1,23 @@
+/*
+Theme Name:   Twenty Twenty-One Child
+Theme URI:    https://rockenseine.com
+Description:  Thème enfant Rock en Seine — basé sur Twenty Twenty-One
+Author:       BUT MMI Limoges
+Author URI:   https://mmi-limoges.fr
+Template:     twentytwentyone
+Version:      1.0.0
+Text Domain:  twentytwentyone-child
+*/
+
+@import url('assets/css/_root.css');
+@import url('assets/css/_reset.css');
+@import url('assets/css/_buttons.css');
+@import url('assets/css/_header.css');
+@import url('assets/css/_main.css');
+@import url('assets/css/_footer.css');
+@import url('assets/css/_archive.css');
+@import url('assets/css/_single.css');
+@import url('assets/css/_slider.css');
+@import url('assets/css/_contact.css');
+@import url('assets/css/_legals.css');
+@import url('assets/css/_responsive.css');

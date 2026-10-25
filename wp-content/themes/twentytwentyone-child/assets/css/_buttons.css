@@ -1,0 +1,78 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 12px 24px;
+  font-family: var(--ff-label);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  transition:
+    background var(--tr-primary),
+    color var(--tr-primary),
+    border-color var(--tr-primary);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: transform var(--tr-primary);
+  box-shadow: 0 4px 6px rgba(231, 146, 202, 0.5);
+}
+
+/* Bouton cyan principal (CTAs teaser, onglets actifs) */
+.btn--primary {
+  background: var(--clr-accent-cyan);
+  color: var(--clr-white);
+  border-color: var(--clr-accent-cyan);
+}
+.btn--primary:hover {
+  background: #0097b8;
+  border-color: #0097b8;
+}
+
+/* Bouton rouge (billets focus cards) */
+.btn--red {
+  background: var(--clr-accent-red);
+  color: var(--clr-white);
+  border-color: var(--clr-accent-red);
+}
+.btn--red:hover {
+  background: #a93226;
+  border-color: #a93226;
+}
+
+/* Bouton fantôme brun (sur fond saumon) */
+.btn--ghost {
+  background: transparent;
+  color: var(--clr-text);
+  border-color: var(--clr-text);
+}
+.btn--ghost:hover {
+  background: var(--clr-text);
+  color: var(--clr-bg);
+}
+
+/* Bouton fantôme blanc (sur fond sombre) */
+.btn--ghost-white {
+  background: transparent;
+  color: var(--clr-off-white);
+  border-color: var(--clr-off-white);
+}
+.btn--ghost-white:hover {
+  background: var(--clr-off-white);
+  color: var(--clr-bg-dark);
+}
+
+.btn--large {
+  padding: 16px 36px;
+  font-size: 14px;
+}
+.btn--sm {
+  padding: 8px 16px;
+  font-size: 11px;
+}

@@ -1,0 +1,10 @@
+.legals-section ul {
+  list-style-type: unset;
+}
+
+.legals-section h3,
+.legals-section h4,
+.legals-section h5 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}

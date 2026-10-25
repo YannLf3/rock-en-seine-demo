@@ -1,0 +1,74 @@
+:root {
+  /* Couleurs — palette Rock en Seine (maquette saumon) */
+  --clr-bg: #faf0dc;
+  /* fond saumon/pêche principal */
+  --clr-bg-alt: #faf0dc;
+  /* couleurs hero gradient */
+  --clr-bg-gradient: linear-gradient(
+    137deg,
+    rgba(58, 188, 215, 1) 0%,
+    rgba(219, 23, 24, 1) 51%,
+    rgba(240, 139, 172, 1) 100%
+  );
+  /* sections alternées légèrement plus sombres */
+  --clr-bg-dark: #1a1000;
+  /* fond cartes focus artistes */
+  --clr-bg-card: #f0e0cc;
+  /* fond cartes claires */
+  --clr-text: #3d2b1f;
+  /* texte principal brun foncé */
+  --clr-muted: #8b6650;
+  /* texte secondaire brun moyen */
+  --clr-accent-cyan: #00b4d8;
+  /* bleu cyan vif — titres, liens actifs, CTAs */
+  --clr-accent-red: #c0392b;
+  /* rouge — ROCK, badges importants */
+  --clr-accent-orange: #e07b00;
+  /* orange — EN dans le logo */
+  --clr-accent-lime: #c8e000;
+  /* jaune-vert — éclaboussures décoratives */
+  --clr-white: #ffffff;
+  --clr-off-white: #f0e8d0;
+  /* texte sur fonds sombres */
+  --clr-border: #c8855a;
+  /* bordures subtiles sur fond saumon */
+  --clr-border-light: #e8c8b0;
+  /* bordures très légères */
+
+  /* Typographie */
+  --ff-display: "Anton", "Impact", sans-serif;
+  /* titres hero condensés */
+  --ff-body: "Barlow", Arial, sans-serif;
+  /* corps de texte */
+  --ff-label: "Barlow Condensed", Arial, sans-serif;
+  /* badges, labels, nav */
+
+  /* Tailles */
+  --fs-hero: clamp(4rem, 10vw, 7.5rem);
+  --fs-h1: clamp(2.5rem, 6vw, 4.5rem);
+  --fs-h2: clamp(2rem, 4vw, 3rem);
+  --fs-h3: clamp(1.75rem, 2.5vw, 1.75rem);
+  --fs-body: 1.5rem;
+  --fs-small: 1.25rem;
+  --fs-label: 1rem;
+
+  /* Espacements */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 7.5rem;
+
+  /* Divers */
+  --wrapper-max: 75rem; /* en px : 1200px = 75rem */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --tr-primary: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-lg: 4rem;
+    --space-xl: 7.5rem;
+  }
+}

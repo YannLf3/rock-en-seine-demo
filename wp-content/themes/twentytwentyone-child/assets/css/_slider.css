@@ -1,0 +1,108 @@
+.swiper {
+  width: 100%;
+}
+
+.swiper.single {
+  height: 500px;
+}
+
+.swiper.single .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper.single .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper.single .swiper-button-next,
+.swiper.single .swiper-button-prev {
+  bottom: 0;
+  top: unset;
+  right: unset;
+  left: 0;
+}
+
+.swiper.single .swiper-button-next {
+  left: 60px;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  height: 60px;
+  width: 60px;
+  background-color: var(--clr-white);
+}
+
+.swiper .swiper-button-next:after,
+.swiper .swiper-button-prev:after {
+  color: var(--clr-black);
+  font-weight: bold;
+  font-size: var(--fs-accent);
+}
+
+.swiper.testimonials .swiper-button-next,
+.swiper.testimonials .swiper-button-prev {
+  box-shadow: var(--bs-primary);
+}
+
+.swiper.testimonials .swiper-button-next {
+  right: 20px;
+  left: unset;
+}
+
+.swiper.testimonials .swiper-button-prev {
+  left: 20px;
+  right: unset;
+}
+
+.swiper.testimonials {
+  max-width: 1000px;
+  padding: 30px;
+}
+
+.swiper.testimonials .swiper-slide {
+  max-width: 700px;
+  background-color: var(--clr-white);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  margin-right: 100px;
+  margin-left: 100px;
+  overflow: visible;
+  gap: 20px;
+  box-shadow: var(--bs-primary);
+  border-left: 3px solid var(--clr-red);
+}
+
+.swiper.testimonials .swiper-slide .profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  background-color: var(--clr-red);
+  border-radius: 50%;
+  min-height: 65px;
+}
+.swiper.testimonials .swiper-slide .profile-picture img {
+  width: 25px;
+  object-fit: contain;
+}
+
+.swiper.testimonials .swiper-slide .author {
+  font-size: var(--fs-small-title);
+  font-weight: 500;
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  color: var(--clr-red);
+}

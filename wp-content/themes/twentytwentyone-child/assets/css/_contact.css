@@ -1,0 +1,119 @@
+.contact-info-section {
+  padding-top: unset;
+}
+
+.contact-info-section .contact-infos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 50px;
+  margin-top: -120px;
+}
+
+.contact-info-section .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*gap: 30px;*/
+  background-color: var(--clr-red);
+  color: var(--clr-white);
+  padding: 50px;
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  text-align: center;
+  transition: var(--tr-primary);
+}
+
+.contact-info-section .contact-info:hover,
+.contact-info-section .contact-info:focus {
+  background-color: var(--clr-black) !important;
+  color: var(--clr-white) !important;
+}
+
+.contact-info-section .contact-info a:focus {
+  background-color: transparent !important;
+}
+
+.contact-info-section .contact-info a {
+  color: var(--clr-white) !important;
+}
+
+.contact-info-section .contact-info img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 40px;
+}
+
+.contact-form-section {
+  display: flex;
+  padding-top: unset;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.contact-form-section .form-wrapper {
+  display: flex;
+}
+
+.contact-form-section .left-area {
+  min-width: 500px;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/photo/contact-1.jpg");
+}
+
+.contact-form-section .right-area {
+  flex-grow: 1;
+  padding: 80px;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+#wpforms-120 {
+  margin: unset;
+}
+
+#wpforms-120 .wpforms-field-label {
+  color: var(--clr-white);
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+  letter-spacing: 0.05em;
+}
+
+#wpforms-120 input[type=text]::placeholder, #wpforms-120 input[type=email]::placeholder, #wpforms-120 input[type=tel]::placeholder, #wpforms-120 textarea::placeholder, #wpforms-120 label.wpforms-error, #wpforms-120 em.wpforms-error, #wpforms-120 a {
+  color: var(--clr-white);
+}
+
+#wpforms-120 input, #wpforms-120 textarea {
+  background-color: var(--clr-very-dark-grey);
+  border: 2px solid var(--clr-dark-grey);
+  color: var(--clr-white);
+  border-radius: unset;
+  resize: vertical;
+}
+
+#wpforms-120 input.wpforms-error, #wpforms-120 input.user-invalid, #wpforms-120 textarea.wpforms-error, #wpforms-120 textarea.user-invalid, #wpforms-120 select.wpforms-error, #wpforms-120 select.user-invalid {
+  box-shadow: 0 0 0 2px var(--clr-red);
+}
+
+#wpforms-120 input:focus, #wpforms-120 select:focus, #wpforms-120 textarea:focus {
+  box-shadow: 0 0 0 2px var(--clr-white);
+}
+
+#wpforms-120 .wpforms-confirmation-container-full {
+  background: var(--clr-dark-yellow);
+  border: 1px solid var(--clr-yellow);
+  color: var(--clr-white);
+}
+
+#contact-map {
+  padding-top: unset;
+  padding-bottom: unset;
+  margin-bottom: -10px;
+}
+
+#wpforms-120 input[type=submit]:hover, #wpforms-120 input[type=submit]:active, #wpforms-120 button[type=submit]:hover, #wpforms-120 button[type=submit]:active, #wpforms-120 .wpforms-page-button:hover, #wpforms-120 .wpforms-page-button:active {
+  background: unset;
+}

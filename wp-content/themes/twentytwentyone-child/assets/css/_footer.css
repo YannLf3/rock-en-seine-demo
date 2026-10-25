@@ -1,0 +1,96 @@
+.site-footer {
+  background: #faf0e0; /* blanc cassé légèrement chaud */
+  border-top: 2px solid var(--clr-border-light);
+  margin-top: var(--space-xl);
+}
+
+.footer__wrapper {
+  max-width: var(--wrapper-max);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+/* Logo dans le footer — couleurs identiques au header */
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9;
+  font-family: var(--ff-display);
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+.footer__logo-rock {
+  color: #b0a090;
+} /* gris chaud / beige sombre */
+.footer__logo-en {
+  color: var(--clr-accent-red);
+}
+.footer__logo-seine {
+  color: var(--clr-accent-cyan);
+}
+
+.footer__tagline {
+  font-size: var(--fs-small);
+  color: var(--clr-muted);
+  line-height: 1.7;
+  max-width: 300px;
+  margin-bottom: var(--space-md);
+}
+
+.footer__social {
+  display: flex;
+  gap: var(--space-sm);
+}
+.footer__social a {
+  font-family: var(--ff-label);
+  font-size: var(--fs-label);
+  font-weight: 700;
+  color: var(--clr-muted);
+  transition: color var(--tr-primary);
+}
+.footer__social a:hover {
+  color: var(--clr-accent-cyan);
+}
+
+.footer__nav-title {
+  font-family: var(--ff-label);
+  font-size: var(--fs-label);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--clr-text);
+  margin-bottom: var(--space-md);
+}
+
+.footer__nav-list li {
+  margin-bottom: var(--space-xs);
+}
+.footer__nav-list a {
+  font-size: var(--fs-small);
+  color: var(--clr-muted);
+  transition: color var(--tr-primary);
+}
+.footer__nav-list a:hover {
+  color: var(--clr-accent-cyan);
+}
+
+.footer__bottom {
+  border-top: 1px solid var(--clr-border-light);
+  background: #faf0e0;
+}
+.footer__bottom .footer__wrapper {
+  padding: var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: none;
+  gap: var(--space-sm);
+}
+.footer__bottom p {
+  font-size: var(--fs-small);
+  color: var(--clr-muted);
+}

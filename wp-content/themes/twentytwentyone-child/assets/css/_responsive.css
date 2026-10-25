@@ -1,0 +1,139 @@
+/* ====================================================
+   TABLETTE (max 1024px)
+   ==================================================== */
+@media (max-width: 1024px) {
+  .hero__layout {
+    grid-template-columns: 1fr;
+  }
+  .hero__image-box {
+    display: none;
+  } /* masquer l'image sur tablette */
+
+  .focus__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .festival__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tickets__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .artists__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .teaser__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .festival-page__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .festival-page__gallery img:first-child {
+    grid-column: span 2;
+    height: 300px;
+  }
+}
+
+/* ====================================================
+   MOBILE (max 768px)
+   ==================================================== */
+@media (max-width: 768px) {
+  .headliners__track {
+    justify-content: flex-start;
+  }
+
+  .hero {
+    padding-top: 90px;
+    min-height: auto;
+    padding-bottom: var(--space-lg);
+  }
+  .hero__layout {
+    grid-template-columns: 1fr;
+  }
+  .hero__ctas {
+    flex-direction: column;
+  }
+  .hero__ctas .btn {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .stats__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+  }
+
+  .focus__grid {
+    grid-template-columns: 1fr;
+  }
+  .festival__grid {
+    grid-template-columns: 1fr;
+  }
+  .tickets__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .artists__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .access__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .festival-page__stats {
+    gap: var(--space-lg);
+  }
+
+  .programme__artist {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .programme__artist-statut {
+    min-width: auto;
+  }
+
+  .footer__wrapper {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    padding: var(--space-lg) var(--space-md);
+  }
+  .footer__bottom .footer__wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .festival-page__gallery {
+    grid-template-columns: 1fr;
+  }
+  .festival-page__gallery img:first-child {
+    grid-column: span 1;
+    height: 250px;
+  }
+}
+
+/* ====================================================
+   TRÈS PETIT MOBILE (max 480px)
+   ==================================================== */
+@media (max-width: 480px) {
+  .artists__grid {
+    grid-template-columns: 1fr;
+  }
+  .tickets__grid {
+    grid-template-columns: 1fr;
+  }
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .focus__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .headliners__track {
+    justify-content: flex-start;
+  }
+}
